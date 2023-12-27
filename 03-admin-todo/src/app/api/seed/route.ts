@@ -3,9 +3,6 @@ import { NextResponse, NextRequest } from 'next/server'
 
 export async function GET(request: Request) { 
 
-    prisma.todo.create({
-        data: { description: 'Piedra del alma' }
-    })
     const todo = await prisma.todo.create({
         data: { description: 'Piedra del alma' }
     })
