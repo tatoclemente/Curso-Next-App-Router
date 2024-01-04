@@ -1,8 +1,19 @@
-import React from 'react'
+import prisma from "@/lib/prisma";
+import { TodoGrid } from "@/todos";
 
-const RestTodosPage = () => {
+export const metadata = {
+ title: 'Listado de Todos',
+ description: 'Listado de Todos',
+};
+
+const RestTodosPage = async () => {
+  const todos = await prisma.todo.findMany({ orderBy: { description: 'asc' } })
+
+  
   return (
-    <div>Rest Todos Page</div>
+    <div>
+      <TodoGrid todos={ todos } />
+    </div>
   )
 }
 

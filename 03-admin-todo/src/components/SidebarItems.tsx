@@ -1,14 +1,11 @@
 'use client'
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { CiBookmarkCheck } from "react-icons/ci";
 
 interface SidebarItemsProps {
   path: string;
   icon: React.ReactNode;
   text: string;
-  active?: boolean;
-  onClick?: () => void;
 }
 
 export const SidebarItems = ( { path, text, icon  }: SidebarItemsProps ) => {
