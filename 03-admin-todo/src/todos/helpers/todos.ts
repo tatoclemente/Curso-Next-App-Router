@@ -52,3 +52,8 @@ export const deleteCompletedTodos = async () => {
     return todo
 
 }
+
+export const seedTodos = async (): Promise<Todo[]> => {
+    const todos = await fetch('/api/seed').then( res => res.json() )
+    return todos;
+}
