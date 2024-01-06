@@ -11,7 +11,7 @@ export const ButtonRefresh = () => {
     router.refresh();
   }
   return (
-    <button className='flex items-center justify-center gap-2 mr-2 bg-blue-400 hover:bg-blue-500 p-2 rounded-xl text-white transition-all' onClick={ getSeedTodos }>
+    <button className='flex items-center justify-center gap-2 mr-2 bg-blue-400 hover:bg-blue-500 p-2 rounded-xl text-white transition' onClick={ getSeedTodos }>
         <span>Seed</span>
         <IoRefresh />
     </button>
