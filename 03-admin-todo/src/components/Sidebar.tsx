@@ -16,17 +16,17 @@ const menuItems = [
   {
     icon: <IoCheckboxOutline size={30} />,
     text: 'Rest TODOS',
-    path: '/dashboard/rest-todos'
+    path: '/dashboard/todos/rest-todos'
   },
   {
     icon: <IoListOutline size={30} />,
     text: 'Server Actions',
-    path: '/dashboard/server-todos'
+    path: '/dashboard/todos/server-todos'
   },
   {
     icon: <IoCodeWorkingOutline size={30} />,
     text: 'Cookies',
-    path: '/dashboard/cookies'
+    path: '/dashboard/products/cookies'
   },
   {
     icon: <IoBasketOutline size={30} />,
