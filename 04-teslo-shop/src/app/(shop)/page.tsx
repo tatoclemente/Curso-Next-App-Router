@@ -5,7 +5,7 @@ const products = initialData.products
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="px-2">
       <Title 
         title='Tienda'
         subtitle='Todos los productos'
